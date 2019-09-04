@@ -10,6 +10,7 @@ import com.mongodb.MongoClient;
 @Configuration
 @EnableMongoRepositories(basePackages = "com.banking.softbank.repository")
 public class MongoConfig extends AbstractMongoConfiguration {
+
     @Value("${spring.data.mongodb.host}")
     private String mongoDbHost;
 
